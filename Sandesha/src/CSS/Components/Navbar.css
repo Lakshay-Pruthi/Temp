@@ -1,0 +1,34 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondaryBlue);
+    padding: 0px 10px;
+    font-size: large;
+    color: white;
+    border-bottom: 5px solid white;
+}
+
+nav img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul a {
+    background-color: var(--blue);
+    color: white;
+    transition: 0.2s ease;
+}
+
+.active,
+nav ul a:hover {
+    background-color: white;
+    color: var(--blue);
+}

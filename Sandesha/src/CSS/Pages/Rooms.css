@@ -1,0 +1,220 @@
+.Rooms-outer {
+    display: flex;
+}
+
+.rooms {
+    width: 30%;
+    color: white;
+    height: 80vh;
+    overflow-y: scroll;
+    backdrop-filter: blur(10px);
+}
+
+#chatHeading {
+    position: sticky;
+    top: 0px;
+    background-color: var(--secondaryBlue);
+    padding: 14px 10px;
+}
+
+.rooms ul li {
+    background-color: var(--blue);
+
+    padding: 10px;
+    border: 1px solid white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 0.2s ease;
+}
+
+.rooms ul li:hover {
+    background-color: var(--secondaryBlue);
+    cursor: pointer;
+}
+
+#chat {
+    width: 70%;
+    height: 80vh;
+    background-color: var(--blue);
+    border-left: 10px solid white;
+    display: flex;
+    justify-content: center;
+    background: url('./assets/chatbody.jpg');
+}
+
+.roomname {
+    font-size: x-large;
+}
+
+.roomAddress {
+    font-size: medium;
+    color: antiquewhite;
+}
+
+
+
+#chatBox {
+    width: 70%;
+    height: 80vh;
+    background-color: var(--blue);
+    display: none;
+    flex-direction: column;
+}
+
+header {
+    color: white;
+    padding: 10px 25px;
+    font-size: x-large;
+    border-bottom: 2px solid white;
+    background-color: var(--secondaryBlue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header ul {
+    background-color: var(--blue);
+    padding: 0px 20px;
+    width: 300px;
+    list-style: none;
+    position: absolute;
+    right: 500px;
+    top: 135px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+header li {
+    display: none;
+    font-size: small;
+    border-top: 1px solid white;
+    padding: 10px 0px;
+}
+
+header ul:hover>li,
+ul {
+    display: block;
+}
+
+header ul li:hover {
+    background-color: #df2568;
+}
+
+#header-form {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#header-form input {
+    width: 280px !important;
+    height: 39px !important;
+    border-radius: 0px !important;
+    margin: 0 !important;
+    margin-top: 10px !important;
+}
+
+
+
+header button {
+    font-size: large;
+    border: 1px solid white;
+    padding: 5px 25px;
+    background-color: var(--blue);
+    color: white;
+    transition: 0.2s ease;
+    margin-top: 10px;
+}
+
+header button:hover {
+    background-color: white;
+    color: var(--blue);
+}
+
+.chatBody {
+    height: 75%;
+    background: url('./assets/chatbody.jpg');
+    background-size: cover;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+#chatBox input {
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 10px;
+}
+
+.message-outer-left {
+    width: 100%;
+    display: flex;
+}
+
+.message-left {
+    border: 1px solid white;
+    background-color: #df2568;
+    color: white;
+    max-width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border-top-left-radius: 0px;
+    word-break: normal;
+    box-shadow: 0px 0px 10px black;
+}
+
+.message-outer-right {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.message-right {
+    border: 1px solid white;
+    background-color: #df2568;
+    color: white;
+    max-width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border-top-right-radius: 0px;
+    word-break: normal;
+    box-shadow: 0px 0px 10px black;
+
+}
+
+.message-left p,
+.message-right p {
+    font-size: 15px;
+    border-bottom: 1px dotted white;
+    margin-bottom: 10px;
+    color: #ffe644;
+}
+
+
+#chatBox .primaryBtnDesign {
+    border-radius: 10px;
+    height: 50px;
+    color: white;
+    background-color: var(--secondaryBlue);
+    margin: 0px 2px;
+    width: 15%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#sendbutton:hover {
+    background-color: blue;
+    transition: 0.5s ease;
+}
+
+#message-form {
+    display: block;
+}

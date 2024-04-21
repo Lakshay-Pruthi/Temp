@@ -1,0 +1,31 @@
+/* Pages */
+@import url('./CSS/Pages/Home.css');
+@import url('./CSS/Pages/Rooms.css');
+@import url('./CSS/Pages/About.css');
+
+/* Components  */
+@import url('./CSS/Components/Navbar.css');
+@import url('./CSS/Components/Footer.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--primaryFont);
+}
+
+body {
+    background: url('./assets/chatbody.jpg');
+    background-size: 75%;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.primaryBtnDesign {
+    border: 2px solid blanchedalmond;
+    padding: 2px 20px;
+    border-radius: 25px;
+}
